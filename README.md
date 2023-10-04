@@ -2,3 +2,4 @@
 
 # Members
 Anupriya Islam
+Veronica Smarduch
