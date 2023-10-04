@@ -1,5 +1,7 @@
 # Socialprojectbali
 
 # Members
-Anupriya Islam
 Junrui Yao
+Anupriya Islam
+Veronica Smarduch
+Kevin Faraknimella
