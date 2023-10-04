@@ -1,6 +1,7 @@
 # Socialprojectbali
 
 # Members
-- Anupriya Islam
-- Veronica Smarduch
-- Kevin Faraknimella
+Junrui Yao
+Anupriya Islam
+Veronica Smarduch
+Kevin Faraknimella
