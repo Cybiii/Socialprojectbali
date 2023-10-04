@@ -1,5 +1,5 @@
 # Socialprojectbali
 
 # Members
-Anupriya Islam
-Veronica Smarduch
+- Anupriya Islam
+- Veronica Smarduch
