@@ -1,6 +1,7 @@
 # Socialprojectbali
 
 # Members
+
 - Junrui Yao
 - Anupriya Islam
 - Veronica Smarduch
@@ -8,4 +9,3 @@
 - Yujing Wang
 - Junlong Wang
 - Sebastian Silva
-- Ashley Peterson
