@@ -9,3 +9,4 @@
 - Yujing Wang
 - Junlong Wang
 - Sebastian Silva
+- Ashley Peterson
