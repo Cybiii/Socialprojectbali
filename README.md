@@ -2,8 +2,10 @@
 
 # Members
 
-Junrui Yao
-Anupriya Islam
-Veronica Smarduch
-Kevin Faraknimella
-Yujing Wang
+- Junrui Yao
+- Anupriya Islam
+- Veronica Smarduch
+- Kevin Faraknimella
+- Yujing Wang
+- Junlong Wang
+- Sebastian Silva
