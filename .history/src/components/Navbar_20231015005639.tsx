@@ -27,12 +27,11 @@ function Navbar() {
   return (
     <>
       <nav className='navbar bg-blue-500 p-4'>
-      <div className='navbar-container flex justify-between items-center'>
-        <Link to='/' className='navbar-logo flex items-center flex-nowrap' onClick={closeMobileMenu}>
-          <img src='/images/SPB_lgo.jpeg' alt="Logo" className="logo-image mr-4" /> {/* Logo Image Placeholder */}
-          SOCIAL PROJECT BALI
-          <i className='fab fa-typo3 ml-2' />
-        </Link>
+        <div className='navbar-container flex justify-between items-center'>
+          <Link to='/' className='navbar-logo flex items-center' onClick={closeMobileMenu}>
+            Logo 
+            <i className='fab fa-typo3 ml-2' />
+          </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -87,8 +86,17 @@ function Navbar() {
                  Contact Us
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                 Donate
+              </Link>
+            </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Donate</Button>}
+          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>

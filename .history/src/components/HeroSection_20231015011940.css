@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 video {
   object-fit: cover;
   width: 100%;
@@ -30,8 +34,6 @@ video {
   font-size: 32px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-  width: 75%;
-  text-align: center;
 }
 
 .hero-btns {

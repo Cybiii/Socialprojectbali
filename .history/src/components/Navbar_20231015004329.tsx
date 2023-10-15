@@ -26,17 +26,16 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar bg-blue-500 p-4'>
-      <div className='navbar-container flex justify-between items-center'>
-        <Link to='/' className='navbar-logo flex items-center flex-nowrap' onClick={closeMobileMenu}>
-          <img src='/images/SPB_lgo.jpeg' alt="Logo" className="logo-image mr-4" /> {/* Logo Image Placeholder */}
-          SOCIAL PROJECT BALI
-          <i className='fab fa-typo3 ml-2' />
-        </Link>
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            Logo 
+            <i class='fab fa-typo3' />
+          </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={`flex ${click ? 'flex-col' : ''} ${click ? 'nav-menu active' : 'nav-menu'}`}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
@@ -48,16 +47,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                About Us
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                History
+                Mission
               </Link>
             </li>
             <li className='nav-item'>
@@ -66,29 +56,21 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                 Volunteer
+                 History
               </Link>
             </li>
-            <li className='nav-item'>
+
+            <li>
               <Link
-                to='/products'
-                className='nav-links'
+                to='/sign-up'
+                className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                 Gallery
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                 Contact Us
+                About us
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Donate</Button>}
+          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>

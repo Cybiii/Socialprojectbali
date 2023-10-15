@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-2.mp4' autoPlay loop muted />
-      <h1 className='text-red-800'>SOCIAL PROJECT BALI</h1>
+      <h1>SOCIAL PROJECT BALI</h1>
       <p className='w-3/4 justify-center'>A Bali-based non-profit organization dedicated to advancing education, environmental conservation, and promoting social welfare.</p>
       <div className='hero-btns'>
         <Button
