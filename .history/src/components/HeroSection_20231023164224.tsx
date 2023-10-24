@@ -21,7 +21,7 @@ function HeroSection() {
   }, [images]);
 
   return (
-    <div className="w-full h-[100vh] relative overflow-hidden">
+    <div className="w-full h-[75vh] relative overflow-hidden">
       {images.map((imgSrc, idx) => (
         <div
           key={idx}
@@ -33,7 +33,7 @@ function HeroSection() {
       ))}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-4/5">
         <h1 className="text-white font-bold text-7xl mb-4">SOCIAL PROJECT BALI</h1>
-        <p className="text-white text-3xl mx-auto mb-8">A Bali-based non-profit organization dedicated to advancing education, environmental conservation, and promoting social welfare.</p>
+        <p className="text-white text-4xl mx-auto mb-8">A Bali-based non-profit organization dedicated to advancing education, environmental conservation, and promoting social welfare.</p>
         <div>
           <Button
             className='btns'

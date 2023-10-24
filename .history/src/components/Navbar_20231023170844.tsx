@@ -39,7 +39,7 @@ function Navbar() {
           <ul className={`flex ${click ? 'flex-col' : ''} ${click ? 'nav-menu active' : 'nav-menu'}`}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                HOME
+                Home
               </Link>
             </li>
             <li className='nav-item'>
@@ -48,7 +48,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                ABOUT US
+                About Us
               </Link>
             </li>
             <li className='nav-item'>
@@ -57,7 +57,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                HISTORY
+                History
               </Link>
             </li>
             <li className='nav-item'>
@@ -66,7 +66,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                 VOLUNTEER
+                 Volunteer
               </Link>
             </li>
             <li className='nav-item'>
@@ -75,7 +75,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                 GALLERY
+                 Gallery
               </Link>
             </li>
             <li className='nav-item'>
@@ -84,7 +84,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                 CONTACT US
+                 Contact Us
               </Link>
             </li>
             <li>
@@ -93,7 +93,7 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                GALLERY
+                Gallery
               </Link>
             </li>
             <li>
@@ -102,7 +102,7 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                VOLUNTEER
+                Volunteer
               </Link>
             </li>
             <li>
@@ -111,7 +111,7 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                DONATE
+                Donate
               </Link>
             </li>
             <li>
@@ -120,11 +120,11 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                CONTACT US
+                Contact Us
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>DONATE</Button>}
+          {button && <Button buttonStyle='btn--outline'>Donate</Button>}
         </div>
       </nav>
     </>

@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import History from './components/pages/History';
-import Volunteer from './components/pages/Volunteer';
+import SignUp from './components/pages/SignUp';
 import AboutUs from './components/pages/AboutUs';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path='/' exact Component={Home} />
           <Route path='/aboutus' Component={AboutUs} />
           <Route path='/history' Component={History} />
-          <Route path='/volunteer' Component={Volunteer} />
+          <Route path='/sign-up' Component={SignUp} />
         </Routes>
       </Router>
     </>

@@ -5,7 +5,7 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1 className="text-6xl text-indigo-700 font-bold mb-4">Explore Social Project Bali</h1>
+      <h1>meow</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -13,19 +13,19 @@ function Cards() {
               src='images/AboutUs_Home.png'
               text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
               label='About Us'
-              path='/aboutus'
+              path='/About Us'
             />
             <CardItem
               src='images/Volunteer_Home.png'
               text='Experience Football on Top of the Himilayan Mountains'
               label='Volunteer'
-              path='/volunteer'
+              path='/products'
             />
             <CardItem
               src='images/Donate_Home.png'
               text='Ride through the Sahara Desert on a guided camel tour'
               label='Donate'
-              path='/donate'
+              path='/sign-up'
             />
           </ul>
         </div>

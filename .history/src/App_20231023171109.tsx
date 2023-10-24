@@ -3,8 +3,8 @@ import Navbar from './components/Navbar';
 
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import History from './components/pages/History';
-import Volunteer from './components/pages/Volunteer';
+import Products from './components/pages/Products';
+import SignUp from './components/pages/SignUp';
 import AboutUs from './components/pages/AboutUs';
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
         <Routes>
           <Route path='/' exact Component={Home} />
           <Route path='/aboutus' Component={AboutUs} />
-          <Route path='/history' Component={History} />
-          <Route path='/volunteer' Component={Volunteer} />
+          <Route path='/products' Component={Products} />
+          <Route path='/sign-up' Component={SignUp} />
         </Routes>
       </Router>
     </>

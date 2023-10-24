@@ -26,7 +26,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
+      <nav className='navbar bg-green-500 p-4'>
       <div className='navbar-container flex justify-between items-center'>
         <Link to='/' className='navbar-logo flex items-center flex-nowrap' onClick={closeMobileMenu}>
           <img src='/images/SPB_lgo.jpeg' alt="Logo" className="logo-image mr-4" />
@@ -39,92 +39,92 @@ function Navbar() {
           <ul className={`flex ${click ? 'flex-col' : ''} ${click ? 'nav-menu active' : 'nav-menu'}`}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                HOME
+                Home
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/aboutus'
+                to='/services'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                ABOUT US
+                About Us
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/history'
+                to='/services'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                HISTORY
+                History
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/volunteer'
+                to='/products'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                 VOLUNTEER
+                 Volunteer
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/gallery'
+                to='/products'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                 GALLERY
+                 Gallery
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/contactus'
+                to='/products'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                 CONTACT US
+                 Contact Us
               </Link>
             </li>
             <li>
               <Link
-                to='/gallery'
+                to='/sign-up'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                GALLERY
+                Gallery
               </Link>
             </li>
             <li>
               <Link
-                to='/volunteer'
+                to='/sign-up'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                VOLUNTEER
+                Volunteer
               </Link>
             </li>
             <li>
               <Link
-                to='/donate'
+                to='/sign-up'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                DONATE
+                Donate
               </Link>
             </li>
             <li>
               <Link
-                to='/contactus'
+                to='/sign-up'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                CONTACT US
+                Contact
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>DONATE</Button>}
+          {button && <Button buttonStyle='btn--outline'>Donate</Button>}
         </div>
       </nav>
     </>

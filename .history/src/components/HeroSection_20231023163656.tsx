@@ -21,19 +21,19 @@ function HeroSection() {
   }, [images]);
 
   return (
-    <div className="w-full h-[100vh] relative overflow-hidden">
+    <div className="w-full h-[75vh] relative overflow-hidden"
+      style={{background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(29, 0, 77, 0.69) 37.5%, rgba(217, 217, 217, 0) 100%)'}}>
       {images.map((imgSrc, idx) => (
-        <div
+        <img
           key={idx}
-          className={`absolute w-full h-full transition-opacity duration-1000 ${currentImageIdx === idx ? 'opacity-100' : 'opacity-0'}`}
-        >
-          <img src={imgSrc} alt="Slideshow Image" className="absolute w-full h-full object-cover" />
-          <div className="absolute w-full h-full" style={{ background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(29, 0, 77, 0.69) 37.5%, rgba(217, 217, 217, 0) 100%)' }}></div>
-        </div>
+          src={imgSrc}
+          alt="Slideshow Image"
+          className={`absolute w-full h-full object-cover transition-opacity duration-1000 ${currentImageIdx === idx ? 'opacity-100' : 'opacity-0'}`}
+        />
       ))}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-4/5">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         <h1 className="text-white font-bold text-7xl mb-4">SOCIAL PROJECT BALI</h1>
-        <p className="text-white text-3xl mx-auto mb-8">A Bali-based non-profit organization dedicated to advancing education, environmental conservation, and promoting social welfare.</p>
+        <p className="text-white text-4xl mx-auto mb-8">A Bali-based non-profit organization dedicated to advancing education, environmental conservation, and promoting social welfare.</p>
         <div>
           <Button
             className='btns'
