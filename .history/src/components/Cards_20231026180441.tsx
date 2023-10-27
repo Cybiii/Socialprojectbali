@@ -11,13 +11,13 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/AboutUs_Home.png'
-              text='Empowering Bali through education, environmental action, and social harmony.'
+              text='Empowering Bali through education, environmental action, and social harmony'
               label='About Us'
               path='/aboutus'
             />
             <CardItem
               src='images/Volunteer_Home.png'
-              text='Learn how you can make a difference in Bali through hands-on involvement.'
+              text='Learn how you can make a difference in Bali through hands-on involvement'
               label='Volunteer'
               path='/volunteer'
             />

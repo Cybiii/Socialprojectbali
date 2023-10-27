@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function AboutUs() {
-    const [section, setSection] = useState('mission');
+    const [section, setSection] = useState('about');
 
     const renderSection = () => {
         switch(section) {
@@ -57,7 +57,7 @@ export default function AboutUs() {
                     Social Project Bali is a dedicated non-profit organization situated amidst the natural beauty of Bali, Indonesia.
                     We're on a mission to foster positive change in key areas, including education, environmental conservation, and social welfare.
                 </p>
-                <div className="flex space-x-4 justify-center mt-8">
+                <div className="flex space-x-4 bg-violet-950 justify-center mt-8">
                     <button onClick={() => setSection('mission')} className="bg-violet-950 hover:bg-violet-800 text-white text-2xl py-3 px-5 rounded">MISSION</button>
                     <button onClick={() => setSection('vision')} className="bg-violet-950 hover:bg-violet-800 text-white text-2xl py-3 px-5 rounded">VISION</button>
                     <button onClick={() => setSection('join')} className="bg-violet-950 hover:bg-violet-800 text-white text-2xl py-3 px-5 rounded">JOIN US</button>
