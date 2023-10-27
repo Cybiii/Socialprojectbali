@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 function CardItem(props) {
   return (
     <>
-      <li className='w-full px-2 py-8 mx-1 my-1'>
-        <Link className='flex flex-col items-center p-8 bg-white border-2 border-violet-950 shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl' to={props.path}>
-          <figure className='w-full h-72 mb-6 overflow-hidden rounded-lg'>
+      <li className='w-full px-4 py-8 mx-4 my-4'>
+        <Link className='flex flex-col items-center p-8 bg-white border-2 border-violet-950 shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl w-72 h-72' to={props.path}>
+          <figure className='w-full h-full mb-6 overflow-hidden rounded-lg'>
             <img
-              className='w-full h-full object-cover transform transition-transform duration-300 hover:scale-110' // Added zoom effect here
+              className='w-full h-full object-cover'
               alt='Image'
               src={props.src}
             />
@@ -22,5 +22,6 @@ function CardItem(props) {
     </>
   );
 }
+
 
 export default CardItem;

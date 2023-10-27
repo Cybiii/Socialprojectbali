@@ -21,7 +21,7 @@ function HeroSection() {
   }, [images]);
 
   return (
-    <div className="w-full h-[75vh] relative overflow-hidden">
+    <div className="w-full h-4/5 relative overflow-hidden">
       {images.map((imgSrc, idx) => (
         <div
           key={idx}

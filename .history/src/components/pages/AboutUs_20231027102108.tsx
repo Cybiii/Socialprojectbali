@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function AboutUs() {
-    const [section, setSection] = useState('mission');
+    const [section, setSection] = useState('about');
 
     const renderSection = () => {
         switch(section) {
@@ -63,7 +63,7 @@ export default function AboutUs() {
                     <button onClick={() => setSection('join')} className="bg-violet-950 hover:bg-violet-800 text-white text-2xl py-3 px-5 rounded">JOIN US</button>
                 </div>
             </div>
-            <div className="flex space-x-8 w-3/4">
+            <div className="flex space-x-8 bg-violet-950 w-3/4">
                 {renderSection()}
             </div>
         </div>

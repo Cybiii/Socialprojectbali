@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 export default function AboutUs() {
-    const [section, setSection] = useState('mission');
+    const [section, setSection] = useState('about');
 
     const renderSection = () => {
         switch(section) {
             case 'mission':
                 return (
                     <>
-                        <img src="images/AboutUs_1.png" alt="Mission Image" className="w-2/5 h-120 overflow-hidden rounded-lg shadow-md"/>
+                        <img src="images/AboutUs_1.png" alt="Mission Image" className="w-2/5 rounded-lg shadow-md"/>
                         <div className="flex-1 space-y-4">
                             <h2 className="text-4xl font-bold text-violet-950">OUR MISSION</h2>
                             <p className="text-2xl text-black">
@@ -21,7 +21,7 @@ export default function AboutUs() {
             case 'vision':
                 return (
                     <>
-                        <img src="images/AboutUs_2.png" alt="Vision Image" className="w-2/5 h-120 overflow-hidden rounded-lg shadow-md"/>
+                        <img src="images/AboutUs_2.png" alt="Vision Image" className="w-2/5 rounded-lg shadow-md"/>
                         <div className="flex-1 space-y-4">
                             <h2 className="text-4xl font-bold text-violet-950">OUR VISION</h2>
                             <p className="text-2xl text-black">
@@ -34,7 +34,7 @@ export default function AboutUs() {
             case 'join':
                 return (
                     <>
-                        <img src="images/AboutUs_3.png" alt="Join Us Image" className="w-2/5 h-120 overflow-hidden rounded-lg shadow-md"/>
+                        <img src="images/AboutUs_3.png" alt="Join Us Image" className="w-2/5 h-4/5 overflow-hidden rounded-lg shadow-md"/>
                         <div className="flex-1 space-y-4">
                             <h2 className="text-4xl font-bold text-violet-950">JOIN US</h2>
                             <p className="text-2xl text-black">

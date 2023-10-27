@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function AboutUs() {
-    const [section, setSection] = useState('mission');
+    const [section, setSection] = useState('about');
 
     const renderSection = () => {
         switch(section) {
