@@ -17,7 +17,7 @@ export default function Volunteer() {
               to make a difference in Bali, Indonesia, we warmly welcome you to become
               a part of our volunteer community.
             </p>
-            <button className="bg-violet-950 text-3xl py-2 px-4 rounded hover:bg-purple-700 transition duration-300">
+            <button className="bg-violet-950 text-lg py-2 px-4 rounded hover:bg-purple-700 transition duration-300">
               Join Us Today & Be the Change
             </button>
           </div>

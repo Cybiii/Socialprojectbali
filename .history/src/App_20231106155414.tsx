@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import History from './components/pages/History';
@@ -13,11 +14,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/aboutus' element={<AboutUs />} />
-          <Route path='/history' element={<History />} />
-          <Route path='/volunteer' element={<Volunteer />} />
-          <Route path='/donate' element={<Donate />} />
+          <Route path='/' exact Component={Home} />
+          <Route path='/aboutus' Component={AboutUs} />
+          <Route path='/history' Component={History} />
+          <Route path='/volunteer' Component={Volunteer} />
+          <Route path='/donate' Component={Donate} />
         </Routes>
       </Router>
     </>
@@ -25,3 +26,4 @@ function App() {
 }
 
 export default App;
+

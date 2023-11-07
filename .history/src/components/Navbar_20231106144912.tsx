@@ -125,8 +125,8 @@ function Navbar() {
             </li>
           </ul>
           {button && (
-            <Link to='/donate'>
-              <Button buttonStyle='btn--outline' onClick={closeMobileMenu}>DONATE</Button>
+            <Link to='/donate' className='btn--outline'>
+              <Button onClick={closeMobileMenu}>DONATE</Button>
             </Link>
           )}
         </div>
