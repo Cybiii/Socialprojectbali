@@ -6,7 +6,6 @@ import History from './components/pages/History';
 import Volunteer from './components/pages/Volunteer';
 import AboutUs from './components/pages/AboutUs';
 import Donate from './components/pages/Donate';
-import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,8 +19,8 @@ function App() {
           <Route path='/volunteer' element={<Volunteer />} />
           <Route path='/donate' element={<Donate />} />
         </Routes>
-        <Footer />
       </Router>
+      <Footer />
     </>
   );
 }

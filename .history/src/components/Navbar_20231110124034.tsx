@@ -26,8 +26,8 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar bg-gray-950'>
-      <div className='bg-gray-950 navbar-container flex justify-between items-center'>
+      <nav className='navbar bg-black'>
+      <div className='navbar-container flex justify-between items-center bg-black'>
         <Link to='/' className='navbar-logo flex items-center flex-nowrap' onClick={closeMobileMenu}>
           <img src='/images/SPB_lgo.jpeg' alt="Logo" className="logo-image mr-4" />
           SOCIAL PROJECT BALI
