@@ -14,7 +14,7 @@ function Footer() {
         <div className='max-w-7xl w-full flex flex-wrap justify-around items-center mx-auto'>
           <div className='flex flex-col items-start mb-6 sm:mb-0'>
             <h2 className='font-semibold mb-3'>About Us</h2>
-            <Link to='/history' className='block text-indigo-500 hover:text-purple-500'>History</Link>
+            <Link to='/history' className='block text-indigo-500 hover:text-purple-500'>Our History</Link>
             <Link to='/about-us' className='block text-indigo-500 hover:text-purple-500'>Mission</Link>
             <Link to='/gallery' className='block text-indigo-500 hover:text-purple-500'>Gallery</Link>
           </div>
@@ -28,7 +28,7 @@ function Footer() {
             <Link to='/contact-us' className='block text-indigo-500 hover:text-purple-500'>Contact Page</Link>
           </div>
           <div className='flex flex-col items-start mb-6 sm:mb-0'>
-            <h2 className='font-semibold mb-3'>Socials</h2>
+            <h2 className='font-semibold mb-3'>Connect</h2>
             <Link to='https://www.instagram.com/socialprojectbali/?hl=en' className='block text-indigo-500 hover:text-purple-500' target='_blank'>Instagram</Link>
             <Link to='https://www.facebook.com/socialprojectbali/' className='block text-indigo-500 hover:text-purple-500' target='_blank'>Facebook</Link>
             <Link to='https://www.youtube.com/@socialprojectbali746' className='block text-indigo-500 hover:text-purple-500' target='_blank'>Youtube</Link>

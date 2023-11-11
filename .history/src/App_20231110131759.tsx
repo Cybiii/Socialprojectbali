@@ -20,7 +20,6 @@ function App() {
           <Route path='/volunteer' element={<Volunteer />} />
           <Route path='/donate' element={<Donate />} />
         </Routes>
-        <Footer />
       </Router>
     </>
   );

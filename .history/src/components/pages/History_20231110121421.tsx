@@ -7,7 +7,7 @@ const Section = ({ alt, imageName, children }) => (
       <img src={`images/${imageName}`} alt={alt} className="w-full h-auto rounded-lg" />
     </div>
     <div className="md:w-2/3">
-      <p className="ml-6 mr-6 text-2xl text-black">{children}</p>
+      <p className="text-2xl text-black">{children}</p>
     </div>
   </div>
 );
