@@ -23,13 +23,15 @@ Then, for every other consecutive time:
 
 ```npm run dev```
 
+# Project Leaders
+- Anupriya Islam
+- Sebastian Silva
+
 # Contributors
 
-- Junrui Yao
-- Anupriya Islam
-- Veronica Smarduch
-- Kevin Faraknimella
-- Yujing Wang
 - Junlong Wang
-- Sebastian Silva
-- Ashley Peterson
+- Junrui Yao
+- Clarie Wang
+- Veronica Smarduch
+- Yujing Wang
+- Randy Bui
