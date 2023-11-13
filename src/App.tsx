@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -8,8 +8,6 @@ import AboutUs from './components/pages/AboutUs';
 import Donate from './components/pages/Donate';
 import Footer from './components/Footer';
 import Gallery from './components/pages/Gallery'
-import Contactus from './components/pages/ContactUs';
-import Donate2 from './components/Donate2';
 
 function App() {
   return (

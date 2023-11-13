@@ -1,7 +1,13 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CardItem(props) {
+interface CardItemProps {
+  path: string;
+  src: string;
+  label: string;
+  text: string;
+}
+
+function CardItem(props: CardItemProps) {
   return (
     <>
       <li className='w-full px-2 py-8 mx-1 my-1'>

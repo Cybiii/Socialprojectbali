@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import { useState, useEffect } from "react";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -22,75 +22,87 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener("resize", showButton);
 
   return (
     <>
-      <nav className='navbar bg-gray-950'>
-      <div className='bg-gray-950 navbar-container flex justify-between items-center'>
-        <Link to='/' className='navbar-logo flex items-center flex-nowrap' onClick={closeMobileMenu}>
-          <img src='/images/SPB_lgo.jpeg' alt="Logo" className="logo-image mr-4" />
-          SOCIAL PROJECT BALI
-          <i className='fab fa-typo3 ml-2' />
-        </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+      <nav className="navbar bg-gray-950">
+        <div className="bg-gray-950 navbar-container flex justify-between items-center">
+          <Link
+            to="/"
+            className="navbar-logo flex items-center flex-nowrap"
+            onClick={closeMobileMenu}
+          >
+            <img
+              src="/images/SPB_lgo.jpeg"
+              alt="Logo"
+              className="logo-image mr-4"
+            />
+            SOCIAL PROJECT BALI
+            <i className="fab fa-typo3 ml-2" />
+          </Link>
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={`flex ${click ? 'flex-col' : ''} ${click ? 'nav-menu active' : 'nav-menu'}`}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+          <ul
+            className={`flex ${click ? "flex-col" : ""} ${
+              click ? "nav-menu active" : "nav-menu"
+            }`}
+          >
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 HOME
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/aboutus'
-                className='nav-links'
+                to="/aboutus"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 ABOUT US
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/history'
-                className='nav-links'
+                to="/history"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 HISTORY
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/volunteer'
-                className='nav-links'
+                to="/volunteer"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
-                 VOLUNTEER
+                VOLUNTEER
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/gallery'
-                className='nav-links'
+                to="/gallery"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
-                 GALLERY
+                GALLERY
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='https://linktr.ee/socialprojectbali'
-                className='nav-links'
+                to="https://linktr.ee/socialprojectbali"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
-                 CONTACT US
+                CONTACT US
               </Link>
             </li>
             <li>
               <Link
-                to='/gallery'
-                className='nav-links-mobile'
+                to="/gallery"
+                className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 GALLERY
@@ -98,18 +110,18 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to='/volunteer'
-                className='nav-links-mobile'
+                to="/volunteer"
+                className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 VOLUNTEER
               </Link>
             </li>
-            
+
             <li>
               <Link
-                to='https://linktr.ee/socialprojectbali'
-                className='nav-links-mobile'
+                to="https://linktr.ee/socialprojectbali"
+                className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 CONTACT US
@@ -117,8 +129,15 @@ function Navbar() {
             </li>
           </ul>
           {button && (
-            <Link to='/donate'>
-              <Button buttonStyle='btn--outline' onClick={closeMobileMenu}>DONATE</Button>
+            <Link to="/donate">
+              <Button
+                buttonStyle="btn--outline"
+                onClick={closeMobileMenu}
+                type="button"
+                buttonSize="medium"
+              >
+                DONATE
+              </Button>
             </Link>
           )}
         </div>

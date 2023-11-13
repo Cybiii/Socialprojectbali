@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Button.css';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +6,16 @@ const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-export const Button = ({
+interface ButtonProps {
+  children: React.ReactNode;
+  type: 'button' | 'submit' | 'reset'; // Adjust according to your needs
+  onClick: () => void;
+  buttonStyle: string; // You can further refine this type based on your STYLES array
+  buttonSize: string; // Same as above, can be refined based on your SIZES array
+  className?: string;
+}
+
+export const Button: React.FC<ButtonProps> = ({
   children,
   type,
   onClick,

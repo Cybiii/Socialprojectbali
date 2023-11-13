@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 const Gallery = () => {
     const images = [
         { src: 'images/Slider_1.png', alt: 'Image 1' , description: 'Community Service'},

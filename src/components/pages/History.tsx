@@ -1,7 +1,13 @@
-import React from 'react';
+
 import '../../App.css';
 
-const Section = ({ alt, imageName, children }) => (
+interface SectionProps {
+  alt: string;
+  imageName: string;
+  children: React.ReactNode;
+}
+
+const Section: React.FC<SectionProps> = ({ alt, imageName, children }) => (
   <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-x-6 mb-6">
     <div className="md:w-1/3">
       <img src={`images/${imageName}`} alt={alt} className="w-full h-auto rounded-lg" />
