@@ -15,7 +15,7 @@ const Section = ({ alt, imageName, children }) => (
 export default function History() {
   return (
     <div className="container mx-auto p-4 max-w-7xl bg-white">
-      <h1 className="text-4xl text-center text-violet-950 font-bold mt-6 mb-6">Our History</h1>
+      <h1 className="text-7xl text-center text-violet-950 font-bold mt-6 mb-6">Our History</h1>
       <Section alt="history 1" imageName="History_1.jpg">
       Since September 19, 2020, Social Project Bali has steadily grown, fueled by the enthusiasm of diverse individuals. 
       Our supporters range from energetic students eager to make a difference, to dedicated volunteers, innovative companies, and philanthropic donors who believe in our cause.

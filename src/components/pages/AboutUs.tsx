@@ -52,7 +52,7 @@ export default function AboutUs() {
     return (
         <div className="flex flex-col items-center p-16 space-y-16 bg-white w-full">
             <div className="text-center space-y-8 border-b pb-8 w-3/4">
-                <h1 className="text-5xl font-bold text-violet-950">ABOUT US</h1>
+                <h1 className="text-7xl font-bold text-violet-950">About Us</h1>
                 <p className="text-center text-black text-2xl mx-auto">
                     Social Project Bali is a dedicated non-profit organization situated amidst the natural beauty of Bali, Indonesia.
                     We're on a mission to foster positive change in key areas, including education, environmental conservation, and social welfare.
