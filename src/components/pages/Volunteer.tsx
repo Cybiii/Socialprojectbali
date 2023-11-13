@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../App.css'; // This file should contain the required utility classes if not present in Tailwind by default
 
 export default function Volunteer() {
@@ -32,8 +31,6 @@ export default function Volunteer() {
               width="100%"
               height="100%"
               frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
               className="min-h-[500px] md:min-h-screen"
             >
               Loading…
