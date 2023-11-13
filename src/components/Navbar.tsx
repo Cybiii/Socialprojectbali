@@ -105,15 +105,7 @@ function Navbar() {
                 VOLUNTEER
               </Link>
             </li>
-            <li>
-              <Link
-                to='/donate'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                DONATE
-              </Link>
-            </li>
+            
             <li>
               <Link
                 to='/contactus'
