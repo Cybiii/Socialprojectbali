@@ -80,7 +80,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/contactus'
+                to='https://linktr.ee/socialprojectbali'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -108,7 +108,7 @@ function Navbar() {
             
             <li>
               <Link
-                to='/contactus'
+                to='https://linktr.ee/socialprojectbali'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >

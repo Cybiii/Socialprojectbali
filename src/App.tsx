@@ -8,6 +8,7 @@ import AboutUs from './components/pages/AboutUs';
 import Donate from './components/pages/Donate';
 import Footer from './components/Footer';
 import Gallery from './components/pages/Gallery'
+import Contactus from './components/pages/ContactUs';
 
 function App() {
   return (
