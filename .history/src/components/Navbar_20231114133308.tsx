@@ -1,55 +1,27 @@
-import { useState, useEffect } from "react";
-import { Button } from "./Button";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import { Button } from "./Button";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener("resize", showButton);
-
   return (
     <>
-      <nav className="navbar bg-gray-950">
-        <div className="bg-gray-950 navbar-container flex justify-between items-center">
-          <Link
-            to="/"
-            className="navbar-logo flex items-center flex-nowrap"
-            onClick={closeMobileMenu}
-          >
-            <img
-              src="/images/SPB_lgo.jpeg"
-              alt="Logo"
-              className="logo-image mr-4"
-            />
+      <nav className="bg-gray-950">
+        <div className="container mx-auto flex justify-between items-center p-4">
+          <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
+            <img src="/images/SPB_logo.jpeg" alt="Logo" className="h-10 mr-4" />
             SOCIAL PROJECT BALI
             <i className="fab fa-typo3 ml-2" />
           </Link>
-          <div className="menu-icon" onClick={handleClick}>
+          <div className="md:hidden" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul
-            className={`flex ${click ? "flex-col" : ""} ${
-              click ? "nav-menu active" : "nav-menu"
-            }`}
-          >
-            <li className="nav-item">
+          <ul className={`md:flex md:items-center ${click ? "block" : "hidden"}`}>
+          <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 HOME
               </Link>
@@ -91,15 +63,13 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <a
-                href="https://linktr.ee/socialprojectbali"
+              <Link
+                to="https://linktr.ee/socialprojectbali"
                 className="nav-links"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={closeMobileMenu}
               >
                 CONTACT US
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -130,18 +100,16 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && (
-            <Link to="/donate">
-              <Button
-                buttonStyle="btn--outline"
-                onClick={closeMobileMenu}
-                type="button"
-                buttonSize="medium"
-              >
-                DONATE
-              </Button>
-            </Link>
-          )}
+          <Link to="/donate" className="hidden md:block">
+            <Button
+              buttonStyle="btn--outline"
+              onClick={closeMobileMenu}
+              type="button"
+              buttonSize="medium"
+            >
+              DONATE
+            </Button>
+          </Link>
         </div>
       </nav>
     </>
