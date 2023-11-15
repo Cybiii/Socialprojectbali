@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const DonorBoxWidget = () => {
   useEffect(() => {
@@ -13,8 +13,6 @@ const DonorBoxWidget = () => {
     <iframe 
       src="https://donorbox.org/embed/donate-to-social-project-bali"
       name="donorbox"
-      allowpaymentrequest="allowpaymentrequest"
-
       frameBorder="0"
       scrolling="no"
       style={{ height: '900px', width: '100%', minWidth: '250px', maxHeight: 'none!important' }}
