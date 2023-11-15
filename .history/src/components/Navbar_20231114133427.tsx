@@ -91,15 +91,13 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <a
-                href="https://linktr.ee/socialprojectbali"
+              <Link
+                to="https://linktr.ee/socialprojectbali"
                 className="nav-links"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={closeMobileMenu}
               >
                 CONTACT US
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -149,3 +147,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
