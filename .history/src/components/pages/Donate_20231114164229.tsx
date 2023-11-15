@@ -4,7 +4,7 @@ import DonorBoxWidget from '../DonorBoxWidget';
 
 export default function Donate() {
   return (
-    <div className="bg-white p-6">
+    <div className="bg-indigo-900 p-6">
       <div className="max-w-7xl mx-auto text-center">
         {/* Grid container */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -15,7 +15,7 @@ export default function Donate() {
           </div>
           
           {/* Alternative Payments Column */}
-          <div className="md:col-span-1 bg-indigo-950 text-white p-4 mt-8 md:mt-0 rounded-lg shadow-md">
+          <div className="md:col-span-1 bg-purple-400 text-indigo-900 p-4 mt-8 md:mt-0 rounded-lg shadow-md">
             <h1 className="text-4xl font-bold text-white mb-4">Help Us Achieve Our Goals!</h1>
             <p className="text-xl md:text-2xl text-white mb-8 px-4">Your support enables us to continue our mission in Bali, providing education and resources to those in need. Every donation, big or small, contributes to making a lasting impact.</p>
             <h2 className="text-3xl font-semibold mb-2">Alternative ways to donate:</h2>

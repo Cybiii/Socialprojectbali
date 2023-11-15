@@ -4,7 +4,7 @@ import DonorBoxWidget from '../DonorBoxWidget';
 
 export default function Donate() {
   return (
-    <div className="bg-white p-6">
+    <div className="bg-indigo-900 p-6">
       <div className="max-w-7xl mx-auto text-center">
         {/* Grid container */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
